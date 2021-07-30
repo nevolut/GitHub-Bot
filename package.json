@@ -1,0 +1,25 @@
+{
+  "name": "github-bot",
+  "version": "1.0.0",
+  "description": "A JS script written for tricking the github contribution chart, and make commits in the past as well as future dates in seconds.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "git:init": "rm -rfv .git && git init && git add . && git commit -m init && git remote add origin https://github.com/nevolut/github-bot.git && git push --force origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nevolut/github-bot.git"
+  },
+  "keywords": [],
+  "author": "Archimede Body",
+  "license": "MIT",
+  "homepage": "https://github.com/nevolut/github-bot#README.md",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.1",
+    "random": "^3.0.6",
+    "simple-git": "^2.40.0",
+    "txtgen": "^2.2.8"
+  }
+}
